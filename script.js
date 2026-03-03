@@ -9,7 +9,16 @@ function convertToRoman(num) {
       6:['I', 1]
     };
 
-  //your code here
+	let result = "";
+
+  for (let i = 0; i < values.length; i++) {
+  while (num >= values[i][0]) {
+    result += values[i][1];
+    num -= values[i][0];
+  }
+}
+
+  return result;
 
 }
 // You can test your code by running the above function and printing it to console by pressing the run button at the top. To run it with input 36, uncomment the following line
